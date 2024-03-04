@@ -1,8 +1,9 @@
-import Pilot from "./Pilot";
+import './PilotsList.css'
+import Pilot from "../Pilot/Pilot";
 
 const PilotsList = ({ pilots }) => {
     return (
-        <ul>
+        <ul className="list">
             {pilots.map((item) => (<li key={item.id}>
                 <Pilot {...item} />
             </li>))}

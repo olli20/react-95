@@ -1,4 +1,6 @@
-const Pilot = ( {name, email, age, active, avatar} ) => {
+import './Pilot.css';
+
+const Pilot = ({ name, email, age, active, avatar }) => {
     return (
         <>
             <img src={avatar} alt="name" width="180" />
